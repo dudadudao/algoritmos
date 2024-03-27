@@ -1,2 +1,2 @@
 # algoritmos
-exemplo de algoritmo do flowalgorithm
+exemplo de algoritmo do flowgorithm
