@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 02:27:03 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMDU7IjAyOjAyOjAzICI7Mjc0OQ=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMDU7IjAyOjI3OjAzICI7MTsyODY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, a" type="String" array="False" size=""/>
+            <declare name="x1, x2, x3, media, faltas" type="Real" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="x1"/>
+            <input variable="x2"/>
+            <input variable="x3"/>
+            <input variable="faltas"/>
+            <assign variable="media" expression="((x1*2)+(x2*3)+(x3*5))/10"/>
+            <if expression="media &gt;=7">
+                <then>
+                    <if expression="faltas &lt;= 25 % 100">
+                        <then>
+                            <assign variable="a" expression="&quot;passou&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="a" expression="&quot;reprovou&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="a" expression="&quot;reprovou&quot;"/>
+                </else>
+            </if>
+            <output expression="&quot;Ola &quot; &amp; nome &amp; &quot;, voce tirou &quot; &amp; media &amp; &quot; na media. Voce &quot; &amp; a &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

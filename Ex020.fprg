@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 03:51:18 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMDU7IjAyOjAyOjAzICI7Mjc0OQ=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMDU7IjAzOjUxOjE4ICI7MjsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, a" type="String" array="False" size=""/>
+            <declare name="x1, x2, x3, media, faltas, aulas" type="Real" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="x1"/>
+            <input variable="x2"/>
+            <input variable="x3"/>
+            <input variable="aulas"/>
+            <input variable="faltas"/>
+            <assign variable="media" expression="media(x1, x2, x3)"/>
+            <assign variable="a" expression="a(media, faltas, aulas)"/>
+            <output expression="&quot;Ola &quot; &amp; nome &amp; &quot;, voce tirou &quot; &amp; media &amp; &quot; na media. Voce &quot; &amp; a &amp; &quot; com &quot; &amp; faltas &amp; &quot; faltas de &quot; &amp; aulas &amp; &quot; aulas.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="a" type="String" variable="a">
+        <parameters>
+            <parameter name="media" type="Real" array="False"/>
+            <parameter name="faltas" type="Integer" array="False"/>
+            <parameter name="aulas" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <if expression="media &gt;=7">
+                <then>
+                    <if expression="faltas &lt;= 25 % aulas">
+                        <then>
+                            <assign variable="a" expression="&quot;passou&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="a" expression="&quot;reprovou&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="a" expression="&quot;reprovou&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="media">
+        <parameters>
+            <parameter name="x1" type="Real" array="False"/>
+            <parameter name="x2" type="Real" array="False"/>
+            <parameter name="x3" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="((x1*2)+(x2*3)+(x3*5))/10"/>
+        </body>
+    </function>
+</flowgorithm>

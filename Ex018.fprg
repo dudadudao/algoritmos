@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 04:01:34 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yNDsiMDM6MDY6MDcgIjszNTkw"/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0zMTsiMDQ6MDE6MzQgIjs1OzM2OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, x1, x2" type="Integer" array="False" size=""/>
+            <declare name="msg" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="d" expression="delta(a, b, c)"/>
+            <if expression="d&gt;=0">
+                <then>
+                    <call expression="x(a, b, d)"/>
+                </then>
+                <else>
+                    <assign variable="msg" expression="&quot;erro&quot;"/>
+                    <output expression="msg" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="delta" type="Real" variable="d">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="b^2-4*a*c"/>
+        </body>
+    </function>
+    <function name="x" type="None" variable="x1, x2">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="d" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-b+d^(1/2))/(2*a)"/>
+            <assign variable="x2" expression="(-b-d^(1/2))/(2*a)"/>
+            <output expression="x1" newline="True"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

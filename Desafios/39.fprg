@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="marya.eduarda"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:16:05 "/>
+        <attribute name="created" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA0OjExOjAwICI7Mjc0OA=="/>
+        <attribute name="edited" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA0OjE2OjA1ICI7MTsyODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="True" size="20"/>
+            <declare name="s, i" type="Real" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="19" direction="inc" step="1">
+                <input variable="n[i]"/>
+                <if expression="n[i]^0.5&lt;225">
+                    <then>
+                        <assign variable="s" expression="n[i]+s"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

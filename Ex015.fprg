@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:48:38 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDQ6Mzc6MjAgIjszNTk1"/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDQ6NDg6MzggIjsyOzM3MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <declare name="msg" type="String" array="False" size=""/>
+            <input variable="ano"/>
+            <if expression="ano % 4 == 0">
+                <then>
+                    <if expression="ano % 100 == 0">
+                        <then>
+                            <if expression="ano % 400 == 0">
+                                <then>
+                                    <assign variable="msg" expression="&quot;&#233; bissexto&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="msg" expression="&quot;n&#227;o &#233; bissexto&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="msg" expression="&quot;&#233; bissexto&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="msg" expression="&quot;n&#227;o &#233; bissexto&quot;"/>
+                </else>
+            </if>
+            <output expression="msg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

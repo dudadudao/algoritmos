@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:43:56 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoxNjowMSAiOzI4MDE="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoyNTozOCAiOzE7MjkxOQ=="/>
+        <attribute name="edited" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDQ7IjA0OjQzOjU2ICI7MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, alg" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="alg" expression="(num%60)"/>
+            <output expression="alg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

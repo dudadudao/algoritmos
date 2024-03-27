@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 03:09:45 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDI6NTQ6NDYgIjszNjAw"/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDM6MDk6NDUgIjsyOzM3MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IMC, peso, altura" type="Real" array="False" size=""/>
+            <declare name="tabela" type="String" array="False" size=""/>
+            <input variable="peso"/>
+            <input variable="altura"/>
+            <assign variable="IMC" expression="peso / (altura^2)"/>
+            <output expression="IMC" newline="True"/>
+            <if expression="IMC &gt; 18.5">
+                <then>
+                    <if expression="IMC &gt;= 24.9">
+                        <then>
+                            <if expression="IMC &gt;= 30">
+                                <then>
+                                    <if expression="IMC &gt;= 35">
+                                        <then>
+                                            <assign variable="tabela" expression="&quot;obesidade extrema&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="tabela" expression="&quot;obesidade&quot;"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="tabela" expression="&quot;excesso de peso&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="tabela" expression="&quot;peso normal&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="tabela" expression="&quot;baixo peso&quot;"/>
+                </else>
+            </if>
+            <output expression="tabela" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

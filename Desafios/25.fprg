@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="marya.eduarda"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:50:17 "/>
+        <attribute name="created" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA4OjQxOjU5ICI7Mjc2OQ=="/>
+        <attribute name="edited" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA4OjUwOjE3ICI7MjsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite os valores de forma crescente&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&lt;b+c &amp;&amp; b&lt;a+c &amp;&amp; c&lt;a+b">
+                <then>
+                    <output expression="&quot;&#233; possivel&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;n&#227;o &#233; possivel&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

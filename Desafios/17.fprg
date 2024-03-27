@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="marya.eduarda"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:28:14 "/>
+        <attribute name="created" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDQ7IjA0OjI1OjIyICI7Mjc1NQ=="/>
+        <attribute name="edited" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDQ7IjA0OjI4OjE0ICI7MTsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a"/>
+            <assign variable="d" expression="b"/>
+            <assign variable="a" expression="d"/>
+            <assign variable="b" expression="c"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

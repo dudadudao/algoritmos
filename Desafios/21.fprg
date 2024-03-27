@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:50:05 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwNDo0MzowMSAiOzI4OTk="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwNDo1MDowNSAiOzE7MzAwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nu1, nu2" type="Real" array="False" size=""/>
+            <input variable="nu1"/>
+            <input variable="nu2"/>
+            <output expression="&quot;diferen&#231;a ao quadrado =&quot;&amp;(nu1-nu2)^2" newline="True"/>
+            <output expression="&quot;diferen&#231;a dos quadrados =&quot;&amp; nu1^2-nu2^2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

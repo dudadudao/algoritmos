@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:37:16 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDQ6MjI6MTUgIjszNTkz"/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDQ6Mzc6MTYgIjsxOzM3MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="ano, mes, dia, idade" type="Integer" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="ano"/>
+            <input variable="mes"/>
+            <input variable="dia"/>
+            <assign variable="idade" expression="-ano+2024"/>
+            <output expression="idade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

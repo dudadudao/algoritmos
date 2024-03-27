@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 02:59:07 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDI6NTQ6NDYgIjszNjAw"/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtERVNLVE9QLVFSOFFINlY7MjAyNC0wMS0yOTsiMDI6NTk6MDcgIjsxOzM3MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IMC, peso, altura" type="Real" array="False" size=""/>
+            <input variable="peso"/>
+            <input variable="altura"/>
+            <assign variable="IMC" expression="peso / (altura^2)"/>
+            <output expression="IMC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
